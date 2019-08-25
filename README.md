@@ -9,6 +9,8 @@ You can see krano in action here:
 
 [Short krano video](https://twitter.com/applescripter/status/1118601160263372802)
 
+I developed krano in my private time because my colleagues from the business departments simply love Excel documents. And as a data analyst I want to see them happy. As the saying goes: "Microsoft Excel is the laser sword of royalty collecting societies!"
+
 ## Dependencies
 In order to use krano you will need the following software, libraries and modules:
 
