@@ -5,6 +5,10 @@ In addition it can also attach the created Excel documents to a specified JIRA i
 
 When the data is so big that krano needs to create several Microsoft documents, it will do so in **parallel** processes to reduce creation time.
 
+You can see krano in action here:
+
+[Short krano video](https://twitter.com/applescripter/status/1118601160263372802)
+
 ## Dependencies
 In order to use krano you will need the following software, libraries and modules:
 
