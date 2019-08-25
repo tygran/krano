@@ -67,7 +67,9 @@ If you want krano to attach the created Excel documents to a specified JIRA issu
 11. Click on the file *sql.py* and enter your SQL query between the three quotes of the variable *SQL\_STATEMENT*
 12. Click on the file *valvo.py* and then choose from the PyCharm menu **Run > Run > Run valvo**
 13. Now krano will start to fetch the data from the database and export it to Excel documents
-14. If you do not want krano to upload the created Excel documents to JIRA, then just set the last argument of this method call in *main_single()* to None: `krano.export(sql_statement, xlsx_filename, config.XLSX_SHEET_NAME, chunk_size, config.EXPORT_OVERWRITE_FILES, config.EXPORT_PARALLEL_PROCESSES, excel_decorations, None)`
+14. If you do not want krano to upload the created Excel documents to JIRA, then just set the last argument of this method call in *main_single()* to None:
+
+`krano.export(sql_statement, xlsx_filename, config.XLSX_SHEET_NAME, chunk_size, config.EXPORT_OVERWRITE_FILES, config.EXPORT_PARALLEL_PROCESSES, excel_decorations, None)`
 
 ### Using krano with the command line
 Configure the *valvo.py* and *sql.py* files as given above (for using krano with PyCharm) and then use your Python version in the command line to execute the *valvo.py* file.
