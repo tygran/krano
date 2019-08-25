@@ -39,9 +39,9 @@ Please manage the password of your database credentials using the separate file 
 The following variables in the config.py file allow to configure the creation of Excel documents:
 
 * EXPORT\_FOLDERPATH: This directory will be used to store the created Excel documents and SQL files. Change it to one on your computer.
-* EXPORT\_OVERWRITE\_FILES: If set to True, krano will overwrite exusting files in the directory specified in EXPORT\_FOLDERPATH. If set to False, krano will not overwrite existing files.
-* EXPORT\_PARALLEL\_PROCESSES: The maximum number of paralel processes to create Excel documents. Change this with caution. On my private MacBook Pro I can easily set this number to 9. On my Dell computer at work I can only use 3 parallel processes.
-* XLSX\_SHEET˜_NAME: The name of the worksheet containing the data.
+* EXPORT\_OVERWRITE\_FILES: If set to True, krano will overwrite existing files in the directory specified in EXPORT\_FOLDERPATH. If set to False, krano will not overwrite existing files.
+* EXPORT\_PARALLEL\_PROCESSES: The maximum number of parallel processes to create Excel documents. Change this with caution. On my private MacBook Pro I can easily set this number to 9. On my Dell computer at work I can only use 3 parallel processes.
+* XLSX\_SHEET˜_NAME: The name of the worksheet within the Excel document containing the data.
 
 #### JIRA
 If you want krano to attach the created Excel documents to a specified JIRA issue, then you need to adjust the following settings to your needs:
