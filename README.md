@@ -57,13 +57,13 @@ If you want krano to attach the created Excel documents to a specified JIRA issu
 1. Open the krano directory with PyCharm
 2. Specify the Python interpreter for the krano project (just in case you did not do it before)
 3. Click on the file *valvo.py* to edit it
-4. In the method main\_single() set the variable
-	5. *creator* to your name
-	6. *chunk_size* to the maximum count of lines saved in one Excel document
-	7. *conn_name* to the name of the database connection you want to use (see file *config.py* for database connection settings)
-	8. *jira_issue* to the identifier of the JIRA issue where you want to attach the created Excel document(s)
-	9. *jira_title* to the title of the JIRA issue where you want to attach the created Excel document(s)
-	10. *xlsx_filename* to the name you want to use for the Excel document(s) to be created
+4. In the method *main\_single()* set the variable
+5. *creator* to your name
+6. *chunk_size* to the maximum count of lines saved in one Excel document
+7. *conn_name* to the name of the database connection you want to use (see file *config.py* for database connection settings)
+8. *jira_issue* to the identifier of the JIRA issue where you want to attach the created Excel document(s)
+9. *jira_title* to the title of the JIRA issue where you want to attach the created Excel document(s)
+10. *xlsx_filename* to the name you want to use for the Excel document(s) to be created
 11. Click on the file *sql.py* and enter your SQL query between the three quotes of the variable *SQL\_STATEMENT*
 12. Click on the file *valvo.py* and then choose from the PyCharm menu **Run > Run > Run valvo**
 13. Now krano will start to fetch the data from the database and export it to Excel documents
