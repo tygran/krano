@@ -74,7 +74,7 @@ class JIRACommenter(object):
 
         logger.info('+{0}+'.format(60 * '-'))
 
-        logger.info("Adding comment to to {0}...".format(url))
+        logger.info("Adding comment to {0}...".format(url))
         try:
             r = requests.post(url, auth=(self.login, self.password), data=data, headers=headers)
             logger.info("HTTP status code: {0}".format(r.status_code))
