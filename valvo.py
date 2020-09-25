@@ -6,6 +6,7 @@ import sql
 from krano import Krano
 from exporter import  ExcelDecoration
 from exporter import  ExcelDecorationElement
+import jira
 
 
 def main_single():
@@ -14,7 +15,7 @@ def main_single():
     conn_name = 'Database PROD'
     db_config = config.DATABASE_CONNECTION_SETTINGS[conn_name]
     jira_issue = 'SMP-999'
-    jira_title = """I need this data in Excel files!"""
+    jira_title = jira.getissuetitle(config.JIRA_BASE_URL, jira_issue, config.JIRA_USER , config.JIRA_PASSWORD)
     xlsx_filename = 'Data_export_{0}_{1}.xlsx'.format(conn_name.replace(' ', '_'), jira_issue)
 
     sql_statement = sql.SQL_STATEMENT
